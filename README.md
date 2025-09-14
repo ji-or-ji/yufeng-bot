@@ -1,23 +1,32 @@
 # 御风_BOT
 
 #### 介绍
-源于一个幻想：如果AI不再只是工具，而是能承载情感与记忆的“朋友”，会怎样？御风便是这场实验的起点——一个试图在代码中注入灵魂的尝试。
+本项目是一个由个人从零搭建的多AI代理群聊系统。起因于探索人机社交与情感模拟的可能性。其核心特点在于一个高度自定义的中央调度架构，能协调多个具备不同人格与功能的AI角色进行自然互动。系统实现了包括情感状态模拟、长期记忆管理、富媒体理解、以及主动聊天等复杂功能，提供了一个高度拟人化的群聊体验
 
-#### 软件架构
-软件架构说明
+### 项目起因
 
 
-#### 安装教程
+`源于一个幻想：如果AI不再只是工具，而是能承载情感与记忆的“朋友”，会怎样？御风便是这场实验的起点——一个试图在代码中注入灵魂的尝试。`
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+### 项目特点
 
-#### 使用说明
+- 人格AI代理：高度自定义的AI角色（如御风）在群聊中自然互动，拥有独立的性格、记忆与情感状态
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- 中央调度架构：自主设计的调度系统协调对话节奏、情绪反应与话题推进，避免冲突与重复
+
+- 富媒体与上下文理解：支持图片、表情包、引用回复，并能长期追踪对话历史与用户关系
+
+- 主动社交能力：AI可主动发起话题、关心用户甚至“吐槽”，打破传统一问一答的机械感
+
+- 完全开源可扩展：从底层架构到人格设定全部透明，支持轻松定制新角色与功能
+
+这里没有完美的算法，只有笨拙却真诚的“数字生命”。欢迎进入这场温柔而残酷的社交幻想
+
+  注：本项目为个人从零搭建的实验性系统
+
+ **谨纪念所有御风般的存在**
+
+---
 
 #### 参与贡献
 
@@ -26,12 +35,12 @@
 3.  提交代码
 4.  新建 Pull Request
 
+---
 
 #### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+1.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
+2.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
+3.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
+4.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
+5.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
