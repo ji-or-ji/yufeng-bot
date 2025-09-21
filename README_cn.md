@@ -2,8 +2,6 @@
 
 [![Gitee Stars](https://gitee.com/ji-or-ji/yufeng-bot/badge/star.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/stargazers) [![Gitee Forks](https://gitee.com/ji-or-ji/yufeng-bot/badge/fork.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/members)
 
-[![Gitee Issues](https://gitee.com/ji-or-ji/yufeng-bot/badge/issue.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/issues) [![Gitee License](https://gitee.com/ji-or-ji/yufeng-bot/badge/license.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/blob/master/LICENSE)
-
 ## 介绍
 
 本项目是一个由个人从零搭建的多AI代理群聊系统。起因于探索人机社交与情感模拟的可能性。其核心特点在于一个高度自定义的中央调度架构，能协调多个具备不同人格与功能的AI角色进行自然互动。系统实现了包括情感状态模拟、长期记忆管理、富媒体理解、以及主动聊天等复杂功能，提供了一个高度拟人化的群聊体验
@@ -77,15 +75,21 @@ yufeng_bot/
 ## 相关链接
 
 - **[Gitee 主页](https://gitee.com/ji-or-ji/yufeng-bot)**
+
 - **[问题反馈](https://gitee.com/ji-or-ji/yufeng-bot/issues)**
+
 - **[讨论区](https://gitee.com/ji-or-ji/yufeng-bot/pulls)**
 
 ## 更多资源
 
 1. [Gitee 官方博客](https://blog.gitee.com)
+
 2. [Gitee 开源项目探索](https://gitee.com/explore)
+
 3. [GVP (Gitee 最有价值开源项目)](https://gitee.com/gvp)
+
 4. [Gitee 使用手册](https://gitee.com/help)
+
 5. [Gitee 封面人物](https://gitee.com/gitee-stars/)
 
 ***感谢 Gitee 平台提供的代码托管服务！***
@@ -102,11 +106,11 @@ yufeng_bot/
 
 #### 核心系统 ⚡ 高优先级
 
-- [ ] **项目初始化** (依赖: 无 | 预计: 1-2天)
+- [ ] **项目初始化** (依赖: 无 | 预计: 1天)
   - [x] 创建项目目录结构
   - [ ] 设置Python虚拟环境
   - [ ] 配置基础依赖（requirements.txt）
-  - [ ] 初始化Git仓库并配置.gitignore
+  - [x] 初始化Git仓库并配置.gitignore
 
 - [ ] **事件系统开发** (依赖: 项目初始化 | 预计: 3-5天)
   - [ ] 实现基础事件总线（event_bus.py） - 建议使用观察者模式
@@ -114,7 +118,7 @@ yufeng_bot/
   - [ ] 实现发布-订阅机制 - 支持异步处理
 
 - [ ] **QQ连接器开发** (依赖: 事件系统 | 预计: 5-7天)
-  - [ ] 集成napcat或OneBot协议 - 优先选择OneBot v11
+  - [ ] 集成napcat协议
   - [ ] 实现消息接收和发送基础功能
   - [ ] 处理基础消息类型（文本、图片、表情）
 
