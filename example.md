@@ -1,6 +1,6 @@
-## 代码示例和建议 (Code Examples & Recommendations)
+# 代码示例和建议 (Code Examples & Recommendations)
 
-### 事件系统示例
+## 事件系统示例
 
 ```python
 # src/yufeng_bot/core/event_bus.py
