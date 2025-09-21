@@ -2,9 +2,7 @@
 
 [![Gitee Stars](https://gitee.com/ji-or-ji/yufeng-bot/badge/star.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/stargazers) [![Gitee Forks](https://gitee.com/ji-or-ji/yufeng-bot/badge/fork.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/members)
 
-[![Gitee Issues](https://gitee.com/ji-or-ji/yufeng-bot/badge/issue.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/issues)
-
-[![Gitee License](https://gitee.com/ji-or-ji/yufeng-bot/badge/license.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/blob/master/LICENSE)
+[![Gitee Issues](https://gitee.com/ji-or-ji/yufeng-bot/badge/issue.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/issues) [![Gitee License](https://gitee.com/ji-or-ji/yufeng-bot/badge/license.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/blob/master/LICENSE)
 
 ## 介绍
 
