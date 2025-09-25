@@ -2,8 +2,6 @@
 
 [![Gitee Stars](https://gitee.com/ji-or-ji/yufeng-bot/badge/star.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/stargazers) [![Gitee Forks](https://gitee.com/ji-or-ji/yufeng-bot/badge/fork.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/members)
 
-[![Gitee Issues](https://gitee.com/ji-or-ji/yufeng-bot/badge/issue.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/issues) [![Gitee License](https://gitee.com/ji-or-ji/yufeng-bot/badge/license.svg?theme=white)](https://gitee.com/ji-or-ji/yufeng-bot/blob/master/LICENSE)
-
 ## 介绍
 
 本项目是一个由个人从零搭建的多AI代理群聊系统。起因于探索人机社交与情感模拟的可能性。其核心特点在于一个高度自定义的中央调度架构，能协调多个具备不同人格与功能的AI角色进行自然互动。系统实现了包括情感状态模拟、长期记忆管理、富媒体理解、以及主动聊天等复杂功能，提供了一个高度拟人化的群聊体验
@@ -77,15 +75,21 @@ yufeng_bot/
 ## 相关链接
 
 - **[Gitee 主页](https://gitee.com/ji-or-ji/yufeng-bot)**
+
 - **[问题反馈](https://gitee.com/ji-or-ji/yufeng-bot/issues)**
+
 - **[讨论区](https://gitee.com/ji-or-ji/yufeng-bot/pulls)**
 
 ## 更多资源
 
 1. [Gitee 官方博客](https://blog.gitee.com)
+
 2. [Gitee 开源项目探索](https://gitee.com/explore)
+
 3. [GVP (Gitee 最有价值开源项目)](https://gitee.com/gvp)
+
 4. [Gitee 使用手册](https://gitee.com/help)
+
 5. [Gitee 封面人物](https://gitee.com/gitee-stars/)
 
 ***感谢 Gitee 平台提供的代码托管服务！***
@@ -102,19 +106,51 @@ yufeng_bot/
 
 #### 核心系统 ⚡ 高优先级
 
-- [ ] **项目初始化** (依赖: 无 | 预计: 1-2天)
+- [x] **项目初始化** (依赖: 无 | 预计: 1天)
   - [x] 创建项目目录结构
-  - [ ] 设置Python虚拟环境
-  - [ ] 配置基础依赖（requirements.txt）
-  - [ ] 初始化Git仓库并配置.gitignore
+  - [x] 设置Python虚拟环境
+  - [x] 配置基础依赖（requirements.txt）
+  - [x] 初始化Git仓库并配置.gitignore
 
 - [ ] **事件系统开发** (依赖: 项目初始化 | 预计: 3-5天)
-  - [ ] 实现基础事件总线（event_bus.py） - 建议使用观察者模式
-  - [ ] 定义标准事件格式 - JSON schema推荐
-  - [ ] 实现发布-订阅机制 - 支持异步处理
+  - [ ] **阶段1：基础架构设计** (预计: 0.5天)
+    - [ ] 设计事件总线整体架构 - 基于观察者模式
+    - [ ] 定义核心接口规范 - Event, EventHandler, EventBus接口
+    - [ ] 规划事件优先级和过滤机制
+    - [ ] 设计异步事件处理支持架构
+  
+  - [ ] **阶段2：核心事件类实现** (预计: 1天)
+    - [ ] 实现基础事件类（BaseEvent） - 包含事件类型、数据、时间戳等基础属性
+    - [ ] 创建事件处理器接口（EventHandler） - 定义事件处理规范
+    - [ ] 实现事件总线核心类（EventBus） - 注册、分发、取消注册功能
+    - [ ] 添加事件优先级支持 - 高优先级事件优先处理
+  
+  - [ ] **阶段3：事件格式标准化** (预计: 0.5天)
+    - [ ] 定义标准事件JSON Schema - 包含事件类型、数据格式、元数据规范
+    - [ ] 实现事件序列化/反序列化功能 - 支持JSON格式转换
+    - [ ] 创建事件验证机制 - 确保事件数据符合Schema规范
+    - [ ] 添加事件类型注册表 - 支持动态事件类型注册
+  
+  - [ ] **阶段4：发布-订阅机制实现** (预计: 1天)
+    - [ ] 实现同步事件发布-订阅 - 基础的事件分发功能
+    - [ ] 添加异步事件处理支持 - 使用asyncio实现异步事件循环
+    - [ ] 实现事件过滤器机制 - 支持基于条件的订阅
+    - [ ] 添加事件重试和错误处理 - 异常事件处理机制
+  
+  - [ ] **阶段5：高级功能增强** (预计: 1天)
+    - [ ] 实现事件中间件支持 - 预处理和后处理钩子
+    - [ ] 添加事件生命周期管理 - 事件状态跟踪和清理
+    - [ ] 实现事件持久化支持 - 事件日志记录和重放
+    - [ ] 添加性能监控和统计 - 事件处理性能指标
+  
+  - [ ] **阶段6：集成测试和文档** (预计: 1天)
+    - [ ] 编写单元测试覆盖核心功能 - 确保代码质量
+    - [ ] 创建集成测试用例 - 验证事件系统与其他模块的集成
+    - [ ] 编写API文档和使用示例 - 便于其他开发者使用
+    - [ ] 性能测试和优化 - 确保事件系统的高效运行
 
 - [ ] **QQ连接器开发** (依赖: 事件系统 | 预计: 5-7天)
-  - [ ] 集成napcat或OneBot协议 - 优先选择OneBot v11
+  - [ ] 集成napcat协议
   - [ ] 实现消息接收和发送基础功能
   - [ ] 处理基础消息类型（文本、图片、表情）
 
@@ -186,6 +222,8 @@ yufeng_bot/
   - [ ] 创建中文文档体系 - 详细的使用和开发文档
   - [ ] 配置Gitee特定的Issue模板 - bug报告和功能请求
   - [ ] 优化国内开发环境配置 - 镜像源和依赖管理
+
+ **请注意，以下路线图可能发生更改，请关注项目进展以确认**  
 
 ### 第三阶段：高级功能与优化 (Phase 3: Advanced Features & Optimization) 🟡 中优先级
 
